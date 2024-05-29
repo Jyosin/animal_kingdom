@@ -55,5 +55,10 @@ plt.show()
 # 将数据保存为torch tensor
 data = torch.tensor(data, dtype=torch.float32)
 labels = torch.tensor(labels, dtype=torch.long)
-torch.save(data, '/mnt/data/shape_paths_data.pt')
-torch.save(labels, '/mnt/data/shape_labels.pt')
+
+print("Data shape:", data.shape)
+print("Labels shape:", labels.shape)
+
+
+torch.save(data, 'data/shape_paths_data.pt')
+torch.save(labels, 'data/shape_labels.pt')
